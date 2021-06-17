@@ -115,6 +115,11 @@ body {
     width: 100%;
     margin: 0 auto; }
 
+.gallary h1 {
+  color: #990000;
+  letter-spacing: .2rem;
+  text-shadow: 1px 4px 2px rgba(0, 0, 0, 0.6); }
+
 .loading-screen {
   position: relative;
   padding-left: 0;
