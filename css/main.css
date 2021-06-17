@@ -93,6 +93,28 @@ body {
   font-size: 4rem;
   text-shadow: 1px 4px 2px rgba(0, 0, 0, 0.6); }
 
+.menu {
+  background-image: url("../img/menu.jpeg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; }
+  .menu h1 {
+    font-size: 4rem;
+    letter-spacing: .5rem;
+    text-shadow: 1px 4px 2px rgba(0, 0, 0, 0.6); }
+  .menu-text {
+    font-family: 'Roboto', sans-serif; }
+  .menu-brand {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #990000;
+    text-shadow: 1px 4px 2px rgba(0, 0, 0, 0.6);
+    letter-spacing: .1rem; }
+  .menu hr.socket {
+    width: 100%;
+    margin: 0 auto; }
+
 .loading-screen {
   position: relative;
   padding-left: 0;
