@@ -296,7 +296,10 @@ $(function(){
               // refresh the parallax based on new page content
             //   parallax.refresh();
             }
-          }]
+          },
+          
+          
+        ]
     })
 })
 
