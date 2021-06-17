@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+.home {
+  background-image: url("../img/hero.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; }
+
+.home-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.home-heading h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 8rem;
+  color: #990000;
+  text-shadow: 1px 4px 2px rgba(0, 0, 0, 0.6);
+  text-transform: capitalize; }
+
+.home-heading h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: #fff;
+  text-shadow: 1px 4px 2px rgba(0, 0, 0, 0.6); }
+
+.navbar-brand {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  text-shadow: 1px 4px 2px rgba(0, 0, 0, 0.6); }
+
+.navbar.solid-toggle {
+  background-color: #990000;
+  transition: background-color 1s ease; }
+
+.nav-link {
+  font-weight: 700;
+  letter-spacing: .2rem; }
+
+.navbar-brand,
+.navbar-brand:active,
+.navbar-brand:visited,
+.navbar-brand:focus,
+.nav-link,
+.nav-link:active,
+.nav-link:visited,
+.nav-link:focus {
+  color: #fff; }
+
+.navbar-toggler,
+.navbar-toggler-icon {
+  color: #fff; }
+
+.about {
+  background-image: url("../img/about.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh; }
+
+.about h1 {
+  font-size: 4rem;
+  letter-spacing: .5rem;
+  text-shadow: 1px 4px 2px rgba(0, 0, 0, 0.6); }
+
+.about-brand {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #990000;
+  text-shadow: 1px 4px 2px rgba(0, 0, 0, 0.6); }
+
+.about-contact {
+  height: 100%; }
+
+.about-contact .form-control {
+  border: none; }
+
+.about-contact .form-control:placeholder-shown {
+  font-size: 1rem; }
+
+.about-contact .form-control:focus {
+  border-color: #cccccc;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.about-contact ::placeholder {
+  font-size: .2rem; }
+
+ul {
+  list-style: none; }
+
+.arrow {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  animation: bounce 1s infinite;
+  -webkit-animation: bounce 1s infinite; }
+
+.down-arrow .fa-angle-down {
+  color: #fff;
+  font-size: 2.2rem;
+  opacity: .5; }
+
+.down-arrow .fa-angle-down:hover {
+  opacity: .8; }
+
+.name-font {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  text-shadow: 1px 4px 2px rgba(0, 0, 0, 0.6); }
+
+.loading-screen {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  background-color: #fff;
+  width: 0%;
+  height: 100%; }
+
+.load-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none; }
+
+/* ------------------TOP SCROLL-------------------------------- */
+a.top-scroll {
+  right: 1.2rem;
+  bottom: 1.2rem;
+  position: fixed;
+  opacity: .4;
+  z-index: 1000;
+  display: none; }
+
+a.top-scroll:hover {
+  opacity: .5; }
+
+.top-scroll .svg-inline--fa {
+  background: crimson;
+  color: #fff;
+  font-size: 3rem;
+  height: 1.7rem; }
+
+/* ---------------------END SCROLL----------------------- */
+.back-to-home {
+  position: absolute;
+  top: 2rem;
+  right: 5rem; }
+  .back-to-home .fa-home {
+    font-size: 1.5rem;
+    color: #990000; }
+
+/* ------------------TOP SCROLL-------------------------------- */
+a.top-scroll {
+  right: 1.2rem;
+  bottom: 1.2rem;
+  position: fixed;
+  opacity: .4;
+  z-index: 1000;
+  display: none; }
+
+a.top-scroll:hover {
+  opacity: .5; }
+
+.top-scroll .svg-inline--fa {
+  background: crimson;
+  color: #fff;
+  font-size: 3rem;
+  height: 1.7rem; }
+
+/* ---------------------END SCROLL----------------------- */
+/*******************MEDIA QUERIES********************/
+/* xsm */
+/* sm */
+@media (max-width: 767.98px) {
+  .home {
+    background-position: left; }
+  .home-heading h1 {
+    font-size: 3.8rem; }
+  .home-heading h2 {
+    font-size: 2rem; }
+  .about {
+    background-position: right; } }
+
+@media (max-width: 991.98px) {
+  .home-heading h1 {
+    font-size: 6rem; }
+  .home-heading h2 {
+    font-size: 2rem; }
+  .about {
+    background-position: left; }
+    .about h1 {
+      font-size: 3rem; } }
+
+/* md */
+@media (min-width: 991.98px) {
+  .navbar.solid,
+  .navbar.solid-toggle {
+    background-color: rgba(153, 0, 0, 0);
+    transition: background-color 1s ease; } }
+
+/* lg */
+/* xl */
