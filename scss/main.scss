@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
-// font-family: 'Great Vibes', cursive;
-// font-family: 'Montserrat', sans-serif;
-// font-family: 'Roboto', sans-serif;
-
 body{
     font-family: 'Montserrat', sans-serif; 
 }
@@ -178,6 +174,23 @@ body{
 
  //-------------------END GALLARY---------------------------------
 
+ //----------------RESERVATIONS-----------------------------------
+.reserve{
+    background-image: url('../img/reservations.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    
+    h1{
+        letter-spacing: .2rem;
+        font-size: 3.5rem;
+    }
+
+}
+ //-------------------END RESERVATIONS----------------------------
+
 // ---------------------PAGE TRANSITION--------------------------
 .loading-screen{
     position: relative;
@@ -283,6 +296,12 @@ a.top-scroll {
           font-size: 3rem;
        }      
     }
+
+    .reserve{
+        h1{
+            font-size: 3rem;
+        }
+    }
  }
  /* md */
  @media (min-width: 991.98px) {   
@@ -303,3 +322,6 @@ a.top-scroll {
    @media (max-width: 1399.98px) {
 
    }
+
+
+   //----------------------END MEDIA QUERIES-----------------------------
