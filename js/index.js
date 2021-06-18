@@ -1,5 +1,3 @@
-
-
 function checkScroll(){
     if($(window).scrollTop() >= 300){
         $('.navbar').addClass('solid');
@@ -310,22 +308,21 @@ $(function(){
                     $('input[type="time"]').attr('value',time);
                     $('input[type="time"]').attr('min',time);
 
-                });
-                
-
+                });              
+                          
             },
             afterEnter() {
-                mapboxgl.accessToken = 'pk.eyJ1IjoibGFzdHJlc29ydHRvY2xvdWQ5IiwiYSI6ImNrcTJnZjMzdTBkZHQydnBpcmhkY25maWoifQ.kU71La7wAQVPAsCrt1mq5g';
-                var map = new mapboxgl.Map({
-                container: 'map',
-                style: 'mapbox://styles/mapbox/streets-v11',
-                center:[-71.060982,42.35725],
-                zoom:18
-                });
+                // mapboxgl.accessToken = 'pk.eyJ1IjoibGFzdHJlc29ydHRvY2xvdWQ5IiwiYSI6ImNrcTJnZjMzdTBkZHQydnBpcmhkY25maWoifQ.kU71La7wAQVPAsCrt1mq5g';
+                // var map = new mapboxgl.Map({
+                // container: 'map',
+                // style: 'mapbox://styles/mapbox/streets-v11',
+                // center:[-71.060982,42.35725],
+                // zoom:18
+                // });
+               
               }
             
-          }
-          
+          }        
           
           
         ]
@@ -333,3 +330,4 @@ $(function(){
 })
 
 //----------------END PAGE TRANSITION---------------------
+
