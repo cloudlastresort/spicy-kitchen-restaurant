@@ -1,3 +1,5 @@
+
+
 function checkScroll(){
     if($(window).scrollTop() >= 300){
         $('.navbar').addClass('solid');
@@ -297,6 +299,33 @@ $(function(){
             //   parallax.refresh();
             }
           },
+          {
+            namespace: 'reservations',
+            beforeEnter() {
+                $(document).ready(function(){
+                    const today = new Date()
+                    $('input[type="date"]').attr('value',today.toISOString().substring(0,10));
+                    $('input[type="date"]').attr('min',today.toISOString().substring(0,10));
+                    const time = today.getHours() + ":" + today.getMinutes();
+                    $('input[type="time"]').attr('value',time);
+                    $('input[type="time"]').attr('min',time);
+
+                });
+                
+
+            },
+            afterEnter() {
+                mapboxgl.accessToken = 'pk.eyJ1IjoibGFzdHJlc29ydHRvY2xvdWQ5IiwiYSI6ImNrcTJnZjMzdTBkZHQydnBpcmhkY25maWoifQ.kU71La7wAQVPAsCrt1mq5g';
+                var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center:[-71.060982,42.35725],
+                zoom:18
+                });
+              }
+            
+          }
+          
           
           
         ]

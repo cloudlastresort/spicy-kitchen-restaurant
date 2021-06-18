@@ -12,6 +12,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="./css/plugins.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Spicy Kitchen | Reservations</title>
@@ -21,17 +22,70 @@
         <div class="loading-screen"></div>
     </div>
     <main data-barba="container" data-barba-namespace="reservations"> 
-        <div id='up' class="reserve container-fluid position-relative">
-            <h1 class="title text-uppercase position-absolute translate-middle top-50 start-50 text-light py-4 text-center display-5 fw-bold">Reservations</h1>             
+        <div id='up' class="reserve container-fluid">
+            <h1 class="title text-uppercase text-light py-4 text-center display-5 fw-bold">Reservations</h1>             
         </div>
         <a href="#history" class="down-arrow text-center">
            <div class="arrow d-none d-md-block">
                <i class="fas fa-angle-down"></i>
            </div>
        </a>
-       <div class="container" id="history" style="height: 100vh;">
-        <h3 class='text-center fw-bold text-uppercase py-4'>submit a reservation</h3>
+       <div class="container my-5" id="history">
+        <h3 class='text-center fw-bold text-uppercase py-4'>make a reservation</h3>
        </div>
+       <button type="button" class="btn btn-outline-danger rounded-0 d-block mx-auto" data-bs-toggle="modal" data-bs-target="#modalHeaderFooter" >Reservation</button>
+<div class="modal fade" id="modalHeaderFooter" tabindex="-1" aria-labelledby="modalHeaderFooterTitle" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="modalHeaderFooterTitle">Reservation</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <input type="date" id='datePicker' />  
+          <input type="time" /> 
+          <select class="form-select mt-4"  aria-label="Default select example">
+             <option value="1" selected>1 Person</option>
+             <option value="2">2 People</option>
+             <option value="3">3 People</option>
+             <option value="4">4 People</option>
+          </select>
+      </div>
+      <div class="modal-footer">  
+        <button type="button" class="btn btn-outline-success rounded-0">Reserve</button>     
+        <button type="button" class="btn btn-outline-danger rounded-0" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-12">
+            <div id='map' style='width: 100%x; height: 500px;'></div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-dark about-contact mt-5 py-5">
+    <div class="row text-light text-capitalize text-center">
+        <div class="col-12 col-lg-4" style="letter-spacing: .2rem;"> 
+            <p class="fw-bold">contact</p>   
+            <p>1017 Nicholas St <br />
+            Kansas <br />
+            66441 <br />
+            201-999-7652 </p>                
+        </div>
+        <div class="col-12 col-lg-4">
+           <h2 class='name-font'>spicy kitchen</h2>
+        </div>
+        <div class="col-12 col-lg-4" style="letter-spacing: .2rem;">
+           <p class="fw-bold">hours</p>
+        <p> mon-wed 6pm -11pm <br />
+        thu-sat 4pm - 12pm <br />
+        sun 11am - 10pm </p>
+        </div>
+    </div>
+ </div>
+      
        <a class='back-to-home' href="./index.html"><i class="fas fa-home"></i></a>
        <a href="#up" class="top-scroll">
            <i class="fa fa-angle-up"></i>
@@ -47,6 +101,8 @@
     integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@barba/core"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'>        
+    </script>
     <script src="./js/index.js"></script>
 </body>
 </html>

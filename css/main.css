@@ -98,7 +98,8 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh; }
+  height: 100vh;
+  background-attachment: fixed; }
   .menu h1 {
     font-size: 4rem;
     letter-spacing: .5rem;
@@ -121,15 +122,20 @@ body {
   text-shadow: 1px 4px 2px rgba(0, 0, 0, 0.6); }
 
 .reserve {
-  background-image: url("../img/reservations.jpeg");
+  background-image: url("../img/reservations.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  position: relative; }
   .reserve h1 {
     letter-spacing: .2rem;
-    font-size: 3.5rem; }
+    font-size: 3.5rem;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .loading-screen {
   position: relative;
@@ -204,7 +210,7 @@ a.top-scroll:hover {
     .about h1 {
       font-size: 3rem; }
   .reserve h1 {
-    font-size: 3rem; } }
+    font-size: 2.5rem; } }
 
 /* md */
 @media (min-width: 991.98px) {

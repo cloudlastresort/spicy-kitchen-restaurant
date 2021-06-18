@@ -130,6 +130,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh; 
+    background-attachment: fixed;
     
  
     & h1{      
@@ -176,19 +177,25 @@ body{
 
  //----------------RESERVATIONS-----------------------------------
 .reserve{
-    background-image: url('../img/reservations.jpeg');
+    background-image: url('../img/reservations.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     background-attachment: fixed;
+    position: relative;
     
     h1{
         letter-spacing: .2rem;
         font-size: 3.5rem;
+        position: absolute;
+        top:55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
 }
+
  //-------------------END RESERVATIONS----------------------------
 
 // ---------------------PAGE TRANSITION--------------------------
@@ -299,7 +306,7 @@ a.top-scroll {
 
     .reserve{
         h1{
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
     }
  }
